@@ -20,4 +20,9 @@
 			text-decoration: none;
 		}
 	}
+	&__title {
+		&::before {
+			@include yellow-circle;
+		}
+	}
 }

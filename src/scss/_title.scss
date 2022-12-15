@@ -13,10 +13,8 @@
 		padding-left: 10px;
 		position: relative;
 		z-index: 20;
-		&::before {
-			@include yellow-circle;
-		}
 	}
+
 	&__fz48 {
 		font-size: 48px;
 		margin-bottom: 25px;
