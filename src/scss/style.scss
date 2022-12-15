@@ -22,6 +22,12 @@ a {
 		text-decoration: none;
 	}
 }
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
 
 .container {
 	max-width: 1140px;
@@ -40,3 +46,5 @@ a {
 @import "sidepanel";
 @import "menu";
 @import "about";
+@import "experience";
+@import "head";

@@ -319,6 +319,13 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -382,6 +389,10 @@ a:hover {
   position: relative;
   z-index: 20;
 }
+.title__fz20 {
+  font-size: 20px;
+  line-height: 30px;
+}
 .title__fz48 {
   font-size: 48px;
   margin-bottom: 25px;
@@ -420,16 +431,16 @@ a:hover {
   background: #000;
 }
 .sidepanel__text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
   height: 148px;
   width: 24px;
 }
 .sidepanel__text span {
-  width: 148px;
-  transform: rotate(-90deg) translate(-40%, -265%);
   display: block;
+  width: 148px;
+  transform: rotate(-90deg) translate(-40%, -260%);
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
 }
 
 .hamburger {
@@ -590,4 +601,106 @@ a:hover {
 }
 .about__scills-circle img {
   padding: 15px 0 0 15px;
+}
+
+.experience {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+.experience__wrapper {
+  padding: 60px 65px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 425px);
+  column-gap: 136px;
+}
+.experience__column .title__fz20 {
+  position: relative;
+  padding-left: 50px;
+}
+.experience__column .title__fz20::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ffa501;
+  border-radius: 100%;
+  left: -7.5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.experience__column-item {
+  margin-top: 45px;
+  position: relative;
+}
+.experience__column-item::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  height: calc(100% + 53px);
+  width: 1px;
+  top: -53px;
+}
+.experience__column-head {
+  margin: 0 0 12px 99px;
+}
+.experience__column-icon {
+  position: absolute;
+  left: 60px;
+  top: 14px;
+}
+.experience__column-icon::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  background: #ffa501;
+}
+.experience__column-icon::before {
+  top: -14px;
+  left: -17.5px;
+}
+.experience__column-icon::after {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 1px;
+  background: #000;
+  left: -60px;
+  top: 4px;
+}
+.experience__column-body {
+  margin-left: 43px;
+}
+
+.head {
+  text-align: center;
+}
+.head__title {
+  position: relative;
+}
+.head__title::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  background: #ffa501;
+}
+.head__title::before {
+  left: 50%;
+  transform: translateX(-37%);
+}
+.head__subtitle {
+  margin-bottom: 25px;
+}
+.head .divider {
+  margin: 0 auto;
+  transform: translateX(6px);
 }

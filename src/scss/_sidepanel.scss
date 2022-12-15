@@ -21,15 +21,15 @@
 		background: #000;
 	}
 	&__text {
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 24px;
 		height: 148px;
 		width: 24px;
 		span {
-			width: 148px;
-			transform: rotate(-90deg) translate(-40%, -265%);
 			display: block;
+			width: 148px;
+			transform: rotate(-90deg) translate(-40%, -260%);
+			font-weight: 700;
+			line-height: 24px;
+			font-size: 16px;
 		}
 	}
 }

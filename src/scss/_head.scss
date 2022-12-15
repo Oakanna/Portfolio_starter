@@ -1,0 +1,18 @@
+.head {
+	text-align: center;
+	&__title {
+		position: relative;
+		@include yellow-circle;
+		&::before {
+			left: 50%;
+			transform: translateX(-37%);
+		}
+	}
+	&__subtitle {
+		margin-bottom: 25px;
+	}
+	.divider {
+		margin: 0 auto;
+		transform: translateX(6px);
+	}
+}
