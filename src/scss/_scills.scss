@@ -1,0 +1,62 @@
+.scills {
+	&__head {
+		padding-top: 120px;
+		margin-bottom: 60px;
+	}
+	&__wrapper {
+		padding: 0 10px;
+		display: grid;
+		grid-template-columns: repeat(4, 270px);
+		grid-template-rows: repeat(2, 270px);
+		grid-auto-rows: auto;
+		gap: 13px;
+	}
+	&__item {
+		padding: 30px;
+		border: solid 1px #000;
+		&-icon {
+			margin-bottom: 20px;
+			height: 65px;
+		}
+		&-title {
+			margin-bottom: 15px;
+		}
+	}
+}
+.progress {
+	padding-top: 120px;
+	&__wrapper {
+		display: grid;
+		grid-template: repeat(2, 70px) / repeat(3, 1fr);
+		gap: 30px 45px;
+	}
+	&__item {
+		padding-top: 8px;
+		&-head {
+			display: flex;
+			justify-content: space-between;
+		}
+		&-title {
+			margin-bottom: 27px;
+			position: relative;
+			padding-left: 13px;
+
+			@include yellow-circle;
+			&::before {
+				top: -8px;
+			}
+		}
+		&-scale {
+			width: 100%;
+			height: 14px;
+			background: #e8e4de;
+			border-radius: 4px;
+		}
+		&-full {
+			background: $main-color;
+			height: 100%;
+
+			border-radius: 4px;
+		}
+	}
+}

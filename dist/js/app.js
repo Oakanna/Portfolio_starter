@@ -16,7 +16,7 @@
   \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\nlet hamburger = document.querySelector(\".hamburger\"),\r\n  menu = document.querySelector(\".menu\"),\r\n  closeEl = document.querySelector(\".menu__close\");\r\n\r\nhamburger.addEventListener(\"click\", () => {\r\n  menu.classList.add(\"active\");\r\n});\r\n\r\ncloseEl.addEventListener(\"click\", () => {\r\n  menu.classList.remove(\"active\");\r\n});\r\n\n\n//# sourceURL=webpack://gulp2022/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nlet hamburger = document.querySelector(\".hamburger\"),\r\n  menu = document.querySelector(\".menu\"),\r\n  closeEl = document.querySelector(\".menu__close\");\r\n\r\nhamburger.addEventListener(\"click\", () => {\r\n  menu.classList.add(\"active\");\r\n});\r\n\r\ncloseEl.addEventListener(\"click\", () => {\r\n  menu.classList.remove(\"active\");\r\n});\r\n\r\n// skales\r\nlet persents = document.querySelectorAll(\".progress__item-percent\"),\r\n  full = document.querySelectorAll(\".progress__item-full\");\r\n\r\npersents.forEach((item, i) => {\r\n  full[i].style.width = item.textContent;\r\n});\r\n\n\n//# sourceURL=webpack://gulp2022/./src/js/app.js?");
 
 /***/ })
 
