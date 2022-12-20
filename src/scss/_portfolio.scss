@@ -17,6 +17,7 @@
 		}
 	}
 	&__item {
+		transition: all 0.6s;
 		&:hover {
 			filter: opacity(0.5);
 		}
