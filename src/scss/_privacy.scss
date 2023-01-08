@@ -1,0 +1,12 @@
+.privacy {
+	padding-top: 50px;
+	p {
+		font-size: 14px;
+	}
+
+	&__title {
+		color: $main-color;
+		text-align: center;
+		font-size: 20px;
+	}
+}
